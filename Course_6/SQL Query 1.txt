@@ -1,0 +1,21 @@
+SQL Query 1
+
+SELECT * FROM FilmLocations
+
+SELECT Title FROM FilmLocations WHERE ReleaseYear>2000
+
+SELECT COUNT(Title) FROM FilmLocations
+
+SELECT DISTINCT ReleaseYear FROM FilmLocations
+
+SELECT ReleaseYear FROM FilmLocations LIMIT 20 OFFSET 10
+
+INSERT INTO FilmLocations(Title, Actor, Writer)
+VALUES(Avengers, Steve, Rogers)
+
+UPDATE FilmLocations
+SET Title = 'Endgame'
+WHERE Actor = 'Steve'
+
+DELETE FROM FilmLocations
+WHERE Writer = 'Rogers'
